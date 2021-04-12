@@ -37,6 +37,7 @@ The upper image shows the underside of the PCB which doesn't have a lot on it, b
 # The Board
 
 The whole thing was hand-soldered, and came together quite nicely (ignoring some hardware flaws in v0.1...).  You can see the completed stack below, with the P1 chip removed in the image below that.
+
 ![Completed stack](https://raw.githubusercontent.com/UnfinishedStuff/Propeller_DIPstick/main/images/DIPstick1.jpg) ![Completed without the P1](https://raw.githubusercontent.com/UnfinishedStuff/Propeller_DIPstick/main/images/DIPstick2.jpg)
 
 It's fairly chunky, but honestly works well.  I love the small footprint of the whole thing, despite the size of the P1 chip.  I'm not actually sure I could have made it any smaller even if I'd bought the smaller 44-pin QFP package, because that would have to be soldered directly to the PCB with the rest of the components, instead of being "stacked" over them via a socket.  The [Propeller Flip](https://www.parallax.com/product/propeller-flip-microcontroller-module/), the smallest official dev board, is 51x18 mm while the DIPstick is 59x18 mm, so there isn't a lot in it.
