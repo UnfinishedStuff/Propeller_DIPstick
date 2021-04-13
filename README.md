@@ -24,11 +24,20 @@ The board was designed in [Kicad 5.1.9](https://www.kicad.org/).  To keep the bo
 
 You can see this in the image below: the bottom PCB shows the upper side of the board, with most of the components in the narrow centre section.  The outer holes along the edge are for the DIP40 socket, and the inner rows are for the 0.1" headers.  The only components sticking out of this footprint are the USB C socket and some LEDs/resistors to the left.
 
+<div align="center">
+  
 ![PCB layout](https://raw.githubusercontent.com/UnfinishedStuff/Propeller_DIPstick/main/images/PCB.jpg)
+
+</div>
 
 The upper image shows the underside of the PCB which doesn't have a lot on it, but does have a Bunny wearing a Propeller Hat.
 
+<div align="center">
+  
 ![Bunny on PCB](https://user-images.githubusercontent.com/20929510/114467926-92a2f780-9be2-11eb-8cd8-24a1802221a9.png)
+  
+*Whee!*
+</div>
 
 The schematics for the board are [in this repo](https://github.com/UnfinishedStuff/Propeller_DIPstick/blob/main/Propeller_DIPstick_schematic.pdf).  The major parts are:  
 
@@ -47,7 +56,11 @@ The schematics for the board are [in this repo](https://github.com/UnfinishedStu
 
 The boards were ordered from [Aisler](http://aisler.com), were hand-soldered, and came together quite nicely (ignoring some hardware flaws in v0.1...).  You can see the completed stack below, with the P1 chip removed in the image below that.
 
+<div align="center">
+  
 ![The completed board](https://raw.githubusercontent.com/UnfinishedStuff/Propeller_DIPstick/main/images/DIPstick.jpg)
+
+</div>
 
 It's fairly chunky, but honestly works well.  I love the small footprint of the whole thing, despite the size of the P1 chip.  I'm not actually sure I could have made it any smaller even if I'd bought the smaller 44-pin QFP package, because that would have to be soldered to the PCB with the rest of the components, instead of being "stacked" over them via a socket.  The [Propeller Flip](https://www.parallax.com/product/propeller-flip-microcontroller-module/), the smallest official dev board, is 51x18 mm in size while the DIPstick is 59x18 mm, so there isn't a lot in it.  All-told, the components cost ~£15.50 including VAT, while the PCB cost approximately £4.26 (for one, although they had to be bought as a pack of 3).  That theoretically gives a cost for one board of just under £20, although in reality it comes out at more because I got 3 PCBs and plenty of spare components.  The cheapest official dev board which is comparable (the Project Board) is ~$30, or about £22, so that's pretty comparable.  
 
@@ -57,6 +70,12 @@ The pair of LEDs beside the USB socket are the TXT and RXT LEDs of the CP2102N, 
 
 Overall I'm happy with the board and it functions well.  The one thing I'd change about it is the reset button: it is poking out the underside of the rear of the PCB, and actually doesn't stick out more than a millimetre or so.  This actually makes it quite hard to push with a finger, you really need to use something to poke it.  For convenience I think it would be better to extend the board a handful of millimetres further and use a larger button to make it easier to press.  Alternatively, the power LED to the right of the USB connector could be moved under the PCB (you'd still see the light as a downlit glow) and the reset button could be placed there instead.   
 
+<div align="center">
+
 ![Button](https://raw.githubusercontent.com/UnfinishedStuff/Propeller_DIPstick/main/images/button.jpg)
+
+*This doesn't really stick out far enough to be easily pressed.*
+
+</div>
 
 That said, I'm happy enough with the whole thing that I'm not going to worry about a version 0.3.  The button issue won't get in the way of learning how to use the board, and in a worst case scenario the reset pin is broken out on the pin headers, so I can bridge that to ground with a jumper wire or button on a breadboard.  I'll keep it in mind for the Propeller 2 DIPstick...
